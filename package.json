@@ -17,6 +17,7 @@
     "package:check": "npm exec --yes package-lock-utd@1.1.3",
     "prepare": "husky"
   },
+  "homepage": "https://pplancq.github.io/revealjs-react-template",
   "dependencies": {
     "clsx": "^2.1.1",
     "react": "^18.3.1",
@@ -30,7 +31,7 @@
     "@pplancq/postcss-config": "^2.1.5",
     "@pplancq/prettier-config": "^1.2.0",
     "@pplancq/stylelint-config": "^2.1.1",
-    "@pplancq/webpack-config": "^1.7.1",
+    "@pplancq/webpack-config": "^1.8.1",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@types/reveal.js": "^5.0.4",

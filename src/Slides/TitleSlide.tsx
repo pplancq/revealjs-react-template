@@ -1,9 +1,10 @@
 import { Slide } from '@Front/components/Slide';
+import { Title } from '@Front/components/Title';
 
 export const TitleSlide = () => {
   return (
     <Slide>
-      <h1>Reveal.js React Template</h1>
+      <Title>Reveal.js React Template</Title>
     </Slide>
   );
 };

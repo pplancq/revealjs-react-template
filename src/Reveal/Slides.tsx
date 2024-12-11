@@ -1,6 +1,10 @@
-import { slides } from '@Front/Slides';
+import type { ComponentType } from 'react';
 
-export const Slides = () => {
+type SlidesProps = {
+  slides: ComponentType[];
+};
+
+export const Slides = ({ slides }: SlidesProps) => {
   return (
     <div className="slides">
       {slides.map(Slide => (

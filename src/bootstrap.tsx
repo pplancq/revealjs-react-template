@@ -1,4 +1,7 @@
-import { App } from '@Front/components/App';
+import { revealConfig } from '@Front/Config/reveal';
+import { Reveal } from '@Front/Reveal/Reveal';
+import { Slides } from '@Front/Reveal/Slides';
+import { slides } from '@Front/Slides';
 import { StrictMode } from 'react';
 import { createRoot, type Root } from 'react-dom/client';
 
@@ -15,7 +18,9 @@ export default class Bootstrap extends HTMLElement {
   connectedCallback() {
     this.root.render(
       <StrictMode>
-        <App />
+        <Reveal config={revealConfig}>
+          <Slides slides={slides} />
+        </Reveal>
       </StrictMode>,
     );
   }

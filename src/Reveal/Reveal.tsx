@@ -1,14 +1,15 @@
 import { type PropsWithChildren, useLayoutEffect, useRef } from 'react';
+import RevealJs, { type Api, type Options } from 'reveal.js';
 
+import 'reveal.js/plugin/highlight/monokai.css';
 import 'reveal.js/dist/reveal.css';
 import 'reveal.js/dist/theme/dracula.css';
-import RevealJs, { Api } from 'reveal.js';
-import RevealHighlight from 'reveal.js/plugin/highlight/highlight';
-import RevealMarkdown from 'reveal.js/plugin/markdown/markdown';
-import RevealNotes from 'reveal.js/plugin/notes/notes';
-import 'reveal.js/plugin/highlight/monokai.css';
 
-export const Reveal = ({ children }: PropsWithChildren) => {
+type RevealProps = {
+  config: Options;
+};
+
+export const Reveal = ({ config, children }: PropsWithChildren<RevealProps>) => {
   const rootRef = useRef<HTMLDivElement>(null);
   const revealRef = useRef<Api | null>(null);
   const isMountedRef = useRef(false);
@@ -22,11 +23,7 @@ export const Reveal = ({ children }: PropsWithChildren) => {
 
     const rootEl = rootRef.current as HTMLDivElement;
 
-    revealRef.current = new RevealJs(rootEl, {
-      hash: true,
-      pdfSeparateFragments: false,
-      plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
-    });
+    revealRef.current = new RevealJs(rootEl, config);
 
     revealRef.current.initialize().then(() => {
       console.info('Reveal.js is loaded.');
@@ -40,7 +37,7 @@ export const Reveal = ({ children }: PropsWithChildren) => {
         console.warn('Reveal.js destroy call failed.');
       }
     };
-  }, []);
+  }, [config]);
 
   return (
     <div className="reveal" ref={rootRef}>

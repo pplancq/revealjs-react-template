@@ -11,34 +11,31 @@ import 'reveal.js/plugin/highlight/monokai.css';
 export const Reveal = ({ children }: PropsWithChildren) => {
   const rootRef = useRef<HTMLDivElement>(null);
   const revealRef = useRef<Api | null>(null);
+  const isMountedRef = useRef(false);
 
   useLayoutEffect(() => {
-    const rootEl = rootRef.current;
-    if (!rootEl) {
+    if (!isMountedRef.current) {
+      isMountedRef.current = true;
       return () => {};
     }
-    let reveal = revealRef.current;
-    if (reveal !== null) {
-      return () => {};
-    }
+    isMountedRef.current = true;
 
-    reveal = new RevealJs(rootEl, {
+    const rootEl = rootRef.current as HTMLDivElement;
+
+    revealRef.current = new RevealJs(rootEl, {
       hash: true,
       pdfSeparateFragments: false,
       plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
     });
 
-    reveal.initialize().then(() => {
+    revealRef.current.initialize().then(() => {
       console.info('Reveal.js is loaded.');
     });
 
     return () => {
-      if (reveal === null) {
-        return;
-      }
       try {
-        reveal.destroy();
-        reveal = null;
+        revealRef.current?.destroy();
+        revealRef.current = null;
       } catch {
         console.warn('Reveal.js destroy call failed.');
       }

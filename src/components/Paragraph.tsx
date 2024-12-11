@@ -1,7 +1,7 @@
 import { BaseComponent, type BaseComponentProps } from '@Front/components/BaseComponent';
 
-type TitleProps = {} & BaseComponentProps<'p'>;
+type ParagraphProps = {} & BaseComponentProps<'p'>;
 
-export const Paragraph = ({ ...props }: TitleProps) => {
+export const Paragraph = ({ ...props }: ParagraphProps) => {
   return <BaseComponent component="p" {...props} />;
 };

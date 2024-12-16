@@ -28,7 +28,7 @@
     "@commitlint/cli": "^19.6.0",
     "@pplancq/commitlint-config": "^2.2.0",
     "@pplancq/eslint-config": "^4.0.4",
-    "@pplancq/postcss-config": "^2.1.5",
+    "@pplancq/postcss-config": "^2.1.6",
     "@pplancq/prettier-config": "^1.2.1",
     "@pplancq/stylelint-config": "^2.1.1",
     "@pplancq/webpack-config": "^1.8.2",

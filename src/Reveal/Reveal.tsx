@@ -12,14 +12,11 @@ type RevealProps = {
 export const Reveal = ({ config, children }: PropsWithChildren<RevealProps>) => {
   const rootRef = useRef<HTMLDivElement>(null);
   const revealRef = useRef<Api | null>(null);
-  const isMountedRef = useRef(false);
 
   useLayoutEffect(() => {
-    if (!isMountedRef.current) {
-      isMountedRef.current = true;
+    if (revealRef.current !== null) {
       return () => {};
     }
-    isMountedRef.current = true;
 
     const rootEl = rootRef.current as HTMLDivElement;
 

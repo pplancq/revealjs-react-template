@@ -1,4 +1,11 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>pplancq/renovate-config"]
+  "extends": ["github>pplancq/renovate-config"],
+  "packageRules": [
+    {
+      "matchDatasources": ["npm"],
+      "groupName": "eslint config",
+      "packagePatterns": ["@pplancq/eslint-config", "@typescript-eslint/utils"]
+    }
+  ]
 }

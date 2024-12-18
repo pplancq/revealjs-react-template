@@ -47,7 +47,7 @@ Open your browser and go to `http://localhost:3000` to view your presentation.
 Brief description of the project structure:
 
 - `src/` : Contains the application's source code.
-- `src/Config/reveal.ts` : Contains the configuration for reveal.js. For more information, see the reveal.js documentation.
+- `src/Config/reveal.ts` : Contains the configuration for reveal.js. For more information, see the [reveal.js documentation](https://revealjs.com/config/).
 - `src/Slides/` : Contains the presentation slides. Slides should be included in `src/Slides/index.ts`.
 
 ### Example Slide
@@ -105,6 +105,7 @@ How to customize the template for your needs:
 
 - Modify the files in `src/` to adjust the content of your slides.
 - Use React components to add interactive features.
+- More information on how to use reveal.js can be found in the [reveal.js documentation](https://revealjs.com/).
 
 ## License
 

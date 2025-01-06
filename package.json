@@ -27,7 +27,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.6.1",
     "@pplancq/commitlint-config": "^2.2.0",
-    "@pplancq/eslint-config": "^4.0.5",
+    "@pplancq/eslint-config": "^4.0.6",
     "@pplancq/postcss-config": "^2.1.6",
     "@pplancq/prettier-config": "^1.2.1",
     "@pplancq/stylelint-config": "^2.1.1",
@@ -51,9 +51,6 @@
   },
   "overrides": {
     "eslint-plugin-jest-extended": {
-      "@typescript-eslint/utils": "8.19.0"
-    },
-    "eslint-plugin-testing-library": {
       "@typescript-eslint/utils": "8.19.0"
     }
   },

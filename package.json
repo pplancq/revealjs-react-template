@@ -27,7 +27,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.6.1",
     "@pplancq/commitlint-config": "^2.2.0",
-    "@pplancq/eslint-config": "^4.0.7",
+    "@pplancq/eslint-config": "^4.0.8",
     "@pplancq/postcss-config": "^2.1.7",
     "@pplancq/prettier-config": "^1.2.1",
     "@pplancq/stylelint-config": "^2.1.1",
@@ -48,11 +48,6 @@
     "webpack": "^5.97.1",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.0"
-  },
-  "overrides": {
-    "eslint-plugin-jest-extended": {
-      "@typescript-eslint/utils": "8.20.0"
-    }
   },
   "volta": {
     "node": "22.13.0",

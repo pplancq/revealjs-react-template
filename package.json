@@ -34,7 +34,7 @@
     "@pplancq/webpack-config": "^1.8.5",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
-    "@types/reveal.js": "^5.0.4",
+    "@types/reveal.js": "^5.0.5",
     "concurrently": "^9.1.2",
     "eslint": "^9.18.0",
     "eslint-plugin-prettier": "^5.2.3",

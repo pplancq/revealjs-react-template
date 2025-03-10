@@ -25,7 +25,7 @@
     "reveal.js": "^5.1.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.7.1",
+    "@commitlint/cli": "^19.8.0",
     "@pplancq/commitlint-config": "^2.2.1",
     "@pplancq/eslint-config": "^4.0.13",
     "@pplancq/postcss-config": "^2.1.9",

@@ -31,7 +31,7 @@
     "@pplancq/postcss-config": "^2.1.9",
     "@pplancq/prettier-config": "^1.2.3",
     "@pplancq/stylelint-config": "^3.1.0",
-    "@pplancq/webpack-config": "^1.9.6",
+    "@pplancq/webpack-config": "^1.9.7",
     "@types/react": "^19.0.12",
     "@types/react-dom": "^19.0.4",
     "@types/reveal.js": "^5.0.5",

@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "license": "MIT",
   "description": "revealjs-react-template",
+  "private": true,
+  "type": "module",
   "scripts": {
     "start": "webpack serve",
     "build": "webpack --mode production",

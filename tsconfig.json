@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ESNext",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "types": ["./src/react-app-env.d.ts", "@pplancq/webpack-config"],
+    "types": ["./src/react-app-env.d.ts", "@rsbuild/core/types"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,

@@ -10,8 +10,8 @@ export const CodeBlock = ({ children, language, highlightLines, ...props }: Mark
     <BaseComponent component="div" {...props} data-markdown>
       <textarea data-template>
         {`\`\`\`${language} [${highlightLines}]
-          ${children}
-          \`\`\``}
+${children}
+\`\`\``}
       </textarea>
     </BaseComponent>
   );

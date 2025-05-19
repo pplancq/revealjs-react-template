@@ -30,7 +30,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@pplancq/commitlint-config": "^2.2.3",
-    "@pplancq/eslint-config": "^4.0.21",
+    "@pplancq/eslint-config": "^4.0.22",
     "@pplancq/postcss-config": "^2.1.10",
     "@pplancq/prettier-config": "^1.2.5",
     "@pplancq/stylelint-config": "^4.0.0",

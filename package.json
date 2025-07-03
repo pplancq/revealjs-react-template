@@ -32,7 +32,7 @@
     "@pplancq/commitlint-config": "^2.2.3",
     "@pplancq/eslint-config": "^4.2.2",
     "@pplancq/postcss-config": "^2.1.13",
-    "@pplancq/prettier-config": "^1.2.6",
+    "@pplancq/prettier-config": "^1.2.7",
     "@pplancq/stylelint-config": "^4.0.1",
     "@rsbuild/core": "^1.4.2",
     "@rsbuild/plugin-eslint": "^1.1.1",

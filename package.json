@@ -5,7 +5,7 @@
   "description": "revealjs-react-template",
   "private": true,
   "type": "module",
-  "packageManager": "npm@11.8.0",
+  "packageManager": "npm@11.9.0",
   "scripts": {
     "start": "rsbuild dev",
     "build": "rsbuild build",

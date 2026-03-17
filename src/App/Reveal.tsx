@@ -1,17 +1,17 @@
 import { type PropsWithChildren, useLayoutEffect, useRef } from 'react';
-import RevealJs, { type Api, type Options } from 'reveal.js';
+import RevealJs, { type RevealApi, type RevealConfig } from 'reveal.js';
 
 import 'reveal.js/plugin/highlight/monokai.css';
-import 'reveal.js/dist/reveal.css';
-import 'reveal.js/dist/theme/dracula.css';
+import 'reveal.js/reveal.css';
+import 'reveal.js/theme/dracula.css';
 
 type RevealProps = {
-  config: Options;
+  config: RevealConfig;
 };
 
 export const Reveal = ({ config, children }: PropsWithChildren<RevealProps>) => {
   const rootRef = useRef<HTMLDivElement>(null);
-  const revealRef = useRef<Api | null>(null);
+  const revealRef = useRef<RevealApi | null>(null);
 
   useLayoutEffect(() => {
     if (revealRef.current !== null) {

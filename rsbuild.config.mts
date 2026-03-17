@@ -18,8 +18,6 @@ const resolveModule = (module: string) => {
   }
 };
 
-console.log((process.env.DISABLE_SOURCE_MAP ?? 'false') === 'true');
-
 export default defineConfig(({ env }) => {
   const isProduction = env === 'production';
 

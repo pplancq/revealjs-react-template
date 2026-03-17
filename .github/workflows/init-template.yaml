@@ -1,0 +1,39 @@
+name: Init Template
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  HUSKY: 0
+
+jobs:
+  init:
+    if: github.run_number == 1 && !github.event.repository.is_template
+    name: Initialize repository from template
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+
+      - name: Setup Node
+        uses: pplancq/actions/setup-node@main
+        with:
+          use-mise: 'true'
+
+      - name: Run init script
+        run: node scripts/init-template.js
+
+      - name: Remove init files and commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git rm scripts/init-template.js
+          git rm .github/workflows/init-template.yaml
+          git add package.json package-lock.json
+          git commit -m "chore: initialize repository from template"
+          git push

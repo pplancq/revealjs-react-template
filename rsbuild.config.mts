@@ -32,7 +32,7 @@ export default defineConfig(({ env }) => {
     ].filter(Boolean),
     source: {
       entry: {
-        index: 'src/main.ts',
+        index: './src/main.ts',
       },
       define: publicVars,
     },

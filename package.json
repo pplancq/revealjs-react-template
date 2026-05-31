@@ -41,7 +41,7 @@
     "@rsbuild/plugin-sass": "^1.5.2",
     "@types/react": "^19.2.15",
     "@types/react-dom": "^19.2.3",
-    "concurrently": "^9.2.1",
+    "concurrently": "^10.0.0",
     "eslint": "^9.39.4",
     "eslint-plugin-prettier": "^5.5.5",
     "husky": "^9.1.7",

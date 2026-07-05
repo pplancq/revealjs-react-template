@@ -38,7 +38,7 @@
     "@rsbuild/core": "^2.1.2",
     "@rsbuild/plugin-eslint": "^2.0.2",
     "@rsbuild/plugin-react": "^2.1.0",
-    "@rsbuild/plugin-sass": "^2.0.0",
+    "@rsbuild/plugin-sass": "^2.0.1",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "concurrently": "^10.0.3",

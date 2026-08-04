@@ -1,9 +1,9 @@
-import { BaseComponent, type BaseComponentProps } from '@Front/components/BaseComponent';
+import { BaseComponent, type BaseComponentProps } from "@Front/components/BaseComponent";
 
 type MarkdownBlockProps = {
   language?: string;
   highlightLines?: string;
-} & BaseComponentProps<'div' | 'span'>;
+} & BaseComponentProps<"div" | "span">;
 
 export const CodeBlock = ({ children, language, highlightLines, ...props }: MarkdownBlockProps) => {
   return (

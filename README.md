@@ -75,8 +75,8 @@ export const BasicSlide = () => {
 
 ```typescript
 // src/Slides/index.ts
-import { BasicSlide } from '@Front/Slides/BasicSlide';
-import { type ComponentType } from 'react';
+import { BasicSlide } from "@Front/Slides/BasicSlide";
+import { type ComponentType } from "react";
 
 export const slides = [BasicSlide] as ComponentType[];
 ```

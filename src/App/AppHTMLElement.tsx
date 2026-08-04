@@ -1,5 +1,5 @@
-import { App } from '@Front/App/App';
-import { createRoot, type Root } from 'react-dom/client';
+import { App } from "@Front/App/App";
+import { createRoot, type Root } from "react-dom/client";
 
 export class AppHTMLElement extends HTMLElement {
   private readonly root: Root;

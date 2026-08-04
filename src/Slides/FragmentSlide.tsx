@@ -1,9 +1,9 @@
-import { Block } from '@Front/components/Block';
-import { List } from '@Front/components/List';
-import { ListItem } from '@Front/components/ListItem';
-import { Paragraph } from '@Front/components/Paragraph';
-import { Slide } from '@Front/components/Slide';
-import { Title } from '@Front/components/Title';
+import { Block } from "@Front/components/Block";
+import { List } from "@Front/components/List";
+import { ListItem } from "@Front/components/ListItem";
+import { Paragraph } from "@Front/components/Paragraph";
+import { Slide } from "@Front/components/Slide";
+import { Title } from "@Front/components/Title";
 
 export const FragmentSlide = () => {
   return (
@@ -32,7 +32,7 @@ export const FragmentSlide = () => {
         <Block fragment animation="fade-in">
           <Block fragment animation="highlight-red">
             <Block fragment animation="fade-out">
-              Fade in {'>'} Turn red {'>'} Fade out
+              Fade in {">"} Turn red {">"} Fade out
             </Block>
           </Block>
         </Block>
@@ -40,7 +40,7 @@ export const FragmentSlide = () => {
 
       <Slide>
         <Title variant="h3">Two-Column List</Title>
-        <Block style={{ display: 'grid', gridTemplateColumns: 'auto auto', justifyContent: 'center' }}>
+        <Block style={{ display: "grid", gridTemplateColumns: "auto auto", justifyContent: "center" }}>
           <List>
             <ListItem fragment fragmentIndex={1}>
               Item 1

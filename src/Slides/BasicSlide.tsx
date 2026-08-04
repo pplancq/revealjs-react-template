@@ -1,7 +1,7 @@
-import { Note } from '@Front/components/Note';
-import { Paragraph } from '@Front/components/Paragraph';
-import { Slide } from '@Front/components/Slide';
-import { Title } from '@Front/components/Title';
+import { Note } from "@Front/components/Note";
+import { Paragraph } from "@Front/components/Paragraph";
+import { Slide } from "@Front/components/Slide";
+import { Title } from "@Front/components/Title";
 
 export const BasicSlide = () => {
   return (

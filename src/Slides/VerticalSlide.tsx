@@ -1,8 +1,8 @@
-import { Paragraph } from '@Front/components/Paragraph';
-import { Slide } from '@Front/components/Slide';
-import { Title } from '@Front/components/Title';
+import { Paragraph } from "@Front/components/Paragraph";
+import { Slide } from "@Front/components/Slide";
+import { Title } from "@Front/components/Title";
 
-import classes from './VerticalSlide.module.scss';
+import classes from "./VerticalSlide.module.scss";
 
 export const VerticalSlide = () => {
   return (

@@ -1,8 +1,8 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
-import concurrently from 'concurrently';
+// eslint-disable-next-line import/no-unresolved
+import concurrently from "concurrently";
 
-const { result } = concurrently(['npm:lint:eslint', 'npm:lint:tsc', 'npm:lint:stylelint', 'npm:lint:prettier'], {
-  prefixColors: 'auto',
+const { result } = concurrently(["npm:lint:eslint", "npm:lint:tsc", "npm:lint:stylelint", "npm:lint:prettier"], {
+  prefixColors: "auto",
   maxProcesses: process.env.CI ? 1 : undefined,
 });
 

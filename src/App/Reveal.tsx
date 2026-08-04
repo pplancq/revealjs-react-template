@@ -1,9 +1,9 @@
-import { type PropsWithChildren, useLayoutEffect, useRef } from 'react';
-import RevealJs, { type RevealApi, type RevealConfig } from 'reveal.js';
+import { type PropsWithChildren, useLayoutEffect, useRef } from "react";
+import RevealJs, { type RevealApi, type RevealConfig } from "reveal.js";
 
-import 'reveal.js/plugin/highlight/monokai.css';
-import 'reveal.js/reveal.css';
-import 'reveal.js/theme/dracula.css';
+import "reveal.js/plugin/highlight/monokai.css";
+import "reveal.js/reveal.css";
+import "reveal.js/theme/dracula.css";
 
 type RevealProps = {
   config: RevealConfig;
@@ -23,7 +23,7 @@ export const Reveal = ({ config, children }: PropsWithChildren<RevealProps>) => 
     revealRef.current = new RevealJs(rootEl, config);
 
     revealRef.current.initialize().then(() => {
-      console.info('Reveal.js is loaded.');
+      console.info("Reveal.js is loaded.");
     });
 
     return () => {
@@ -31,7 +31,7 @@ export const Reveal = ({ config, children }: PropsWithChildren<RevealProps>) => 
         revealRef.current?.destroy();
         revealRef.current = null;
       } catch {
-        console.warn('Reveal.js destroy call failed.');
+        console.warn("Reveal.js destroy call failed.");
       }
     };
   }, [config]);

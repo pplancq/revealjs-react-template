@@ -1,4 +1,4 @@
-import type { ComponentType } from 'react';
+import type { ComponentType } from "react";
 
 type SlidesProps = {
   slides: ComponentType[];
@@ -7,7 +7,7 @@ type SlidesProps = {
 export const Slides = ({ slides }: SlidesProps) => {
   return (
     <div className="slides">
-      {slides.map(Slide => (
+      {slides.map((Slide) => (
         <Slide key={Slide.name || Slide.displayName} />
       ))}
     </div>

@@ -1,10 +1,10 @@
-import type { ComponentProps, PropsWithChildren } from 'react';
+import type { ComponentProps, PropsWithChildren } from "react";
 
 type SlideProps = {
   autoAnimate?: boolean;
   autoAnimateId?: string;
   autoAnimateRestart?: boolean;
-} & ComponentProps<'section'>;
+} & ComponentProps<"section">;
 
 export const Slide = ({
   children,

@@ -1,3 +1,3 @@
-import { AppHTMLElement } from './App/AppHTMLElement';
+import { AppHTMLElement } from "./App/AppHTMLElement";
 
-customElements.define('app-react', AppHTMLElement);
+customElements.define("app-react", AppHTMLElement);

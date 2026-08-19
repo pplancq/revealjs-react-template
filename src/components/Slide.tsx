@@ -12,15 +12,13 @@ export const Slide = ({
   autoAnimateId,
   autoAnimateRestart,
   ...props
-}: PropsWithChildren<SlideProps>) => {
-  return (
-    <section
-      data-auto-animate={autoAnimate}
-      data-auto-animate-id={autoAnimateId}
-      data-auto-animate-restart={autoAnimateRestart}
-      {...props}
-    >
-      {children}
-    </section>
-  );
-};
+}: PropsWithChildren<SlideProps>) => (
+  <section
+    data-auto-animate={autoAnimate}
+    data-auto-animate-id={autoAnimateId}
+    data-auto-animate-restart={autoAnimateRestart}
+    {...props}
+  >
+    {children}
+  </section>
+);

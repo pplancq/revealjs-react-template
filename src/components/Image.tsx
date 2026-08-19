@@ -2,6 +2,4 @@ import { BaseComponent, type BaseComponentProps } from "@Front/components/BaseCo
 
 type BlockProps = BaseComponentProps<"img">;
 
-export const Image = ({ ...props }: BlockProps) => {
-  return <BaseComponent component="img" {...props} />;
-};
+export const Image = ({ ...props }: BlockProps) => <BaseComponent component="img" {...props} />;

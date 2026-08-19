@@ -37,12 +37,10 @@ export const BaseComponent = <C extends ElementType = "div">({
   className,
   animation,
   ...props
-}: BaseComponentProps<C>) => {
-  return (
-    <Component
-      className={clsx(className, fragment && "fragment", animation)}
-      data-fragment-index={fragmentIndex}
-      {...props}
-    />
-  );
-};
+}: BaseComponentProps<C>) => (
+  <Component
+    className={clsx(className, fragment && "fragment", animation)}
+    data-fragment-index={fragmentIndex}
+    {...props}
+  />
+);

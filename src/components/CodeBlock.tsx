@@ -5,14 +5,12 @@ type MarkdownBlockProps = {
   highlightLines?: string;
 } & BaseComponentProps<"div" | "span">;
 
-export const CodeBlock = ({ children, language, highlightLines, ...props }: MarkdownBlockProps) => {
-  return (
-    <BaseComponent component="div" {...props} data-markdown>
-      <textarea data-template>
-        {`\`\`\`${language} [${highlightLines}]
+export const CodeBlock = ({ children, language, highlightLines, ...props }: MarkdownBlockProps) => (
+  <BaseComponent component="div" {...props} data-markdown>
+    <textarea data-template>
+      {`\`\`\`${language} [${highlightLines}]
 ${children}
 \`\`\``}
-      </textarea>
-    </BaseComponent>
-  );
-};
+    </textarea>
+  </BaseComponent>
+);

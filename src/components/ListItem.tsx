@@ -2,6 +2,4 @@ import { BaseComponent, type BaseComponentProps } from "@Front/components/BaseCo
 
 type ListItemProps = {} & BaseComponentProps<"li">;
 
-export const ListItem = ({ ...props }: ListItemProps) => {
-  return <BaseComponent component="li" {...props} />;
-};
+export const ListItem = ({ ...props }: ListItemProps) => <BaseComponent component="li" {...props} />;

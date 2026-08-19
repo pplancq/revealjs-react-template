@@ -4,12 +4,10 @@ import { revealConfig } from "@Front/Config/reveal";
 import { slides } from "@Front/Slides";
 import { StrictMode } from "react";
 
-export const App = () => {
-  return (
-    <StrictMode>
-      <Reveal config={revealConfig}>
-        <Slides slides={slides} />
-      </Reveal>
-    </StrictMode>
-  );
-};
+export const App = () => (
+  <StrictMode>
+    <Reveal config={revealConfig}>
+      <Slides slides={slides} />
+    </Reveal>
+  </StrictMode>
+);

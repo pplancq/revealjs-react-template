@@ -2,8 +2,11 @@ import { defineConfig } from "@pplancq/eslint-config";
 
 export default defineConfig({
   enableReact: true,
-  enablePrettier: "on",
+  enablePrettier: "disableStyleOnly",
   extendConfig: [
+    {
+      ignores: ["build"],
+    },
     {
       files: ["**/*.config.{js,cjs,mjs,ts,cts,mts}"],
       rules: {

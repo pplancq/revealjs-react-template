@@ -31,7 +31,7 @@
   "devDependencies": {
     "@commitlint/cli": "^21.2.4",
     "@pplancq/commitlint-config": "^4.0.12",
-    "@pplancq/eslint-config": "^6.2.1",
+    "@pplancq/eslint-config": "^7.0.0",
     "@pplancq/prettier-config": "^5.0.4",
     "@pplancq/stylelint-config": "^6.1.7",
     "@rsbuild/core": "^2.3.2",
